@@ -1,0 +1,8 @@
+limo_descriptions.txt
+"Find the best limousines in your area with our comprehensive limo brokerage service. We aggregate available limousines to provide you with the best options."
+
+lead_descriptions.txt
+"Generate leads for your limousine service with our sleek and modern website. Our lead capture forms are designed to funnel potential customers to your business."
+
+tracking_descriptions.txt
+"Track your booked limousine in real-time with our Uber-like tracking system. Stay updated on your limousine's location at all times."

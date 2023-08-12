@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <div id="limo-list">
+    {% for limo in limos %}
+      <div class="limo-card">
+        <img src="{{ limo.image }}" alt="{{ limo.name }}">
+        <h2>{{ limo.name }}</h2>
+        <p>{{ limo.description }}</p>
+        <p>Location: {{ limo.location }}</p>
+        <p>Availability: {{ limo.availability }}</p>
+        <a href="{% url 'limo_detail' limo.id %}">View Details</a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

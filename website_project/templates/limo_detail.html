@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div id="limo-detail">
+    <div class="limo-card">
+        <img src="{{ limo.image }}" alt="{{ limo.name }}">
+        <h2>{{ limo.name }}</h2>
+        <p>{{ limo.description }}</p>
+        <p>Availability: {{ limo.availability }}</p>
+        <p>Location: {{ limo.location }}</p>
+    </div>
+    <div id="tracking-map"></div>
+</div>
+<script src="/static/js/limo_tracking.js"></script>
+<script>
+    getLimoData({{ limo.id }});
+    getTrackingData({{ limo.id }});
+</script>
+{% endblock %}
