@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Limo Brokerage</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'limo_list' %}">Limos</a>
+        <a href="{% url 'lead_capture_form' %}">Lead Capture</a>
+    </nav>
+
+    {% block content %}
+    {% endblock content %}
+
+    <footer class="footer">
+        <p>© 2022 Limo Brokerage. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/limo_tracking.js' %}"></script>
+    <script src="{% static 'js/lead_capture.js' %}"></script>
+</body>
+</html>
